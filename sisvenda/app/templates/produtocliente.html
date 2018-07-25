@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method= 'POST'>
+          <div>
+            <label>CNPJ da empresa:</label>
+            <input name="cnpj_empresa" type="number" required>
+          </div>
+          <div>
+            <label>Código do produto:</label>
+            <input name="codigo_produto" type="number" required>
+          </div>
+          <div>
+            <label>Quantidade do produto:</label>
+            <input name="quantidade" type="number" required>
+          </div>
+          <div style="float: right;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </div>
+  </form>
+{% endblock %}

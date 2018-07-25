@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+        {% for x in produtos %}
+        <dl>
+	         <dt> <b> CNPJ da Empresa </b> </dt>
+	         <dd> {{ x['cnpj_empresa']}}</dd>
+           <dt> <b> Código do produto </b> </dt>
+	         <dd> {{ x['codigo']}}</dd>
+           <dt> <b> Nome do produto </b> </dt>
+	         <dd> {{ x['nome_produto']}}</dd>
+           <dt> <b> Quantidade do produto </b> </dt>
+	         <dd> {{ x['quantidade']}}</dd>
+        </dl>
+        {% endfor %}
+{% endblock %}
